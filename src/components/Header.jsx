@@ -55,16 +55,16 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center py-5'>
                 {
                     services.map(({ id, icon, title, subtitle, className }) => (
-                        <div key={id} className='flex items-center justify-center mx-3'>
-                            <div className={`flex items-center justify-center mx-2 p-4` + '' + className}>
+                        <div key={id} className='flex items-center justify-center mx-5'>
+                            <div className={`flex items-center justify-center mx-3 p-4` + '' + className}>
                                 {icon}
                             </div>
-                            <div>
-                                <h3>{title}</h3>
-                                <p>{subtitle}</p>
+                            <div className='p-2'>
+                                <h3 className='font-medium text-lg'>{title}</h3>
+                                <p className='text-[#969696]'>{subtitle}</p>
                             </div>
                         </div>
                     ))
