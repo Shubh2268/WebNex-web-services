@@ -26,9 +26,9 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='w-full z-20 fixed'>
+    <div className='w-full z-20'>
 
-      <div className='px-10 flex items-center justify-between w-full h-full'>
+      <div className='px-10 py-2 flex items-center justify-between w-full h-full'>
 
         <div className='flex items-center'>
           <h1 className='text-2xl sm:text-3xl text-primary font-bold py-2 sm:py-0'>WebNex</h1>
