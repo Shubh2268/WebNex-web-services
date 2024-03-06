@@ -1,7 +1,39 @@
 import React from 'react';
 import BannerImg from '../assets/Banner.png';
+import { CgWebsite } from 'react-icons/cg';
+import { FaTags } from "react-icons/fa";
+import { LiaVrCardboardSolid } from "react-icons/lia";
+import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
 
 const Header = () => {
+
+    const services = [
+        {
+            id: 1,
+            icon: <CgWebsite />,
+            title: 'Web Applications',
+            subtitle: 'lorem ipsum is simply'
+        },
+        {
+            id: 2,
+            icon: <FaTags />,
+            title: 'SEO',
+            subtitle: 'lorem ipsum is simply'
+        },
+        {
+            id: 3,
+            icon: <LiaVrCardboardSolid />,
+            title: 'AR/VR Solution',
+            subtitle: 'lorem ipsum is simply'
+        },
+        {
+            id: 4,
+            icon: <HiOutlineDevicePhoneMobile />,
+            title: 'Mobile Applications',
+            subtitle: 'lorem ipsum is simply'
+        }
+    ];
+
     return (
         <div>
             <div className='grid md:grid-cols-2 h-full p-10 bg-primary/10'>
