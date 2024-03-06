@@ -10,27 +10,31 @@ const Header = () => {
     const services = [
         {
             id: 1,
-            icon: <CgWebsite />,
+            icon: <CgWebsite size={30} />,
             title: 'Web Applications',
-            subtitle: 'lorem ipsum is simply'
+            subtitle: 'lorem ipsum is simply',
+            className: 'bg-[#EFEAFF] text-[#4628A4]'
         },
         {
             id: 2,
-            icon: <FaTags />,
+            icon: <FaTags size={30} />,
             title: 'SEO',
-            subtitle: 'lorem ipsum is simply'
+            subtitle: 'lorem ipsum is simply',
+            className: 'bg-[#ECFFDA] text-[#5FC300]'
         },
         {
             id: 3,
-            icon: <LiaVrCardboardSolid />,
+            icon: <LiaVrCardboardSolid size={30} />,
             title: 'AR/VR Solution',
-            subtitle: 'lorem ipsum is simply'
+            subtitle: 'lorem ipsum is simply',
+            className: 'bg-[#DAE6FF] text-[#00329B]'
         },
         {
             id: 4,
-            icon: <HiOutlineDevicePhoneMobile />,
+            icon: <HiOutlineDevicePhoneMobile size={30} />,
             title: 'Mobile Applications',
-            subtitle: 'lorem ipsum is simply'
+            subtitle: 'lorem ipsum is simply',
+            className: 'bg-[#FFE5DA] text-[#BB3800]'
         }
     ];
 
@@ -51,8 +55,20 @@ const Header = () => {
                 </div>
             </div>
 
-            <div>
-
+            <div className='flex items-center justify-center'>
+                {
+                    services.map(({ id, icon, title, subtitle, className }) => (
+                        <div key={id} className='flex items-center justify-center mx-3'>
+                            <div className={`flex items-center justify-center mx-2 p-4` + '' + className}>
+                                {icon}
+                            </div>
+                            <div>
+                                <h3>{title}</h3>
+                                <p>{subtitle}</p>
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     )
