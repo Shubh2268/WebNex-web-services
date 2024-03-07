@@ -56,7 +56,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className='flex items-center justify-center py-7 border-y-[1px] border-gray-300 mb-20'>
+            <div className='flex items-center justify-center py-7 border-b-[1px] border-gray-300 mb-20'>
                 {
                     services.map(({ id, icon, title, subtitle, bgClass }) => (
                         <div key={id} className='flex items-center justify-center mx-5'>
