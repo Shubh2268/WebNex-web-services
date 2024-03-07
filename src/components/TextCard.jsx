@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RightCard = () => {
+const TextCard = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const RightCard = () => {
   )
 }
 
-export default RightCard
+export default TextCard
