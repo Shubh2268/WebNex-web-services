@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const TextCard = ({ className, textClass }) => {
   return (
@@ -9,4 +9,4 @@ const TextCard = ({ className, textClass }) => {
   )
 }
 
-export default TextCard
+export default TextCard;
