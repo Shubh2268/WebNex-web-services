@@ -17,7 +17,7 @@ const Home = () => {
 
       <div className='flex'>
         <TextCard className='flex flex-col m-10 p-20 w-1/2 ' textClass='py-5' />
-        <img src={homeImg1} alt="" className='w-3/5' />
+        <img src={homeImg1} alt='Image01' />
       </div>
     </div>
   )
